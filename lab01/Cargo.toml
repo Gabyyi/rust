@@ -1,0 +1,12 @@
+[package]
+name = "lab01"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m-rt = "0.7.5"
+cortex-m-semihosting="0.5"
+rp235x-hal = {version="0.3.0", features=["defmt", "critical-section-impl"]}
+panic-probe={version="0.3", features=["print-defmt"]}
+defmt = "0.3"
+defmt-rtt = "0.4"
